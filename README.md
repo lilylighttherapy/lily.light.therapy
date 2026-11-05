@@ -1,9 +1,9 @@
-# Lily & Light Therapy Services — Multi-page Website
+LILY & LIGHT — COMPLETE MULTI-PAGE WEBSITE
 
-Upload **all files inside this ZIP** to the root of the GitHub repository, replacing existing files. Do not upload the ZIP itself.
+Upload ALL files in this ZIP to the ROOT of your GitHub repository (not inside a folder). Replace existing files, then Commit changes. Do not upload the ZIP itself.
 
-Pages: index.html (Home), meet-jen.html (Meet Jen), services.html (Services & FAQ), testimonials.html, contact.html (Locations & Booking).
+Includes homepage, Meet Jen, Services & FAQ, Testimonials, Contact & Book, privacy/disclaimer, transparent logo, profile photo, floral styling, footer logo panel, and mobile navigation.
 
-Existing logo.png, jenefa.jpg, script.js and policy pages are retained. The WhatsApp enquiry form is on contact.html.
+After GitHub Pages deployment completes, refresh the site with Ctrl+Shift+R.
 
-After GitHub Pages deploys, hard-refresh your browser (Ctrl+Shift+R).
+Confirm consent before publishing the two rewritten counselling-session testimonials.
