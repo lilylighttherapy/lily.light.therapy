@@ -474,3 +474,28 @@ body{background:#fbfaf6}
   opacity: 1;
   object-fit: contain;
 }
+
+/* Compact swipeable testimonials — Lily & Light */
+#testimonials .review-carousel{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding:2px;padding:8px 2px 24px;scrollbar-width:none;-webkit-overflow-scrolling:touch;align-items:stretch;}
+#testimonials .review-carousel::-webkit-scrollbar{display:none}
+#testimonials .review-slide{box-sizing:border-box;flex:0 0 calc((100% - 40px)/3);scroll-snap-align:start;min-height:320px;max-height:350px;overflow:hidden;padding:27px 25px;display:flex;flex-direction:column;border-radius:22px;}
+#testimonials .review-slide .testimonial-mark{font-size:54px;line-height:.8;margin-bottom:15px}
+#testimonials .review-slide .review-preview{flex:0 1 auto;font-size:15px;line-height:1.75;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:7;overflow:hidden;}
+#testimonials .review-slide .review-read-more{border:0;background:transparent;padding:10px 0 0;text-align:left;color:var(--green-dark);font:600 13px/1.5 inherit;cursor:pointer;text-decoration:underline;text-underline-offset:4px;}
+#testimonials .review-slide .testimonial-author{margin-top:auto;padding-top:15px;font-size:13px;}
+#testimonials .review-slide .review-full{display:none}
+.review-controls{display:flex;align-items:center;justify-content:center;gap:22px;margin-top:6px}
+.review-arrow{width:42px;height:42px;border-radius:50%;border:1px solid #b9cbb8;background:white;color:var(--green-dark);font-size:22px;cursor:pointer;}
+.review-arrow:disabled{opacity:.35;cursor:default}
+.review-counter{font-size:13px;font-weight:600;letter-spacing:.1em;color:var(--green-dark)}
+.review-swipe-hint{text-align:center;color:var(--muted);font-size:12px;margin-top:10px}
+.review-dialog{border:1px solid #dce6d9;border-radius:20px;background:#fffdf9;color:var(--ink);padding:28px;width:min(620px,calc(100% - 28px));max-height:80vh;overflow:auto;box-shadow:0 25px 80px rgba(0,0,0,.16)}
+.review-dialog::backdrop{background:rgba(24,42,31,.55)}
+.review-dialog-top{display:flex;justify-content:space-between;align-items:center;gap:15px;color:var(--green-dark);font-size:12px;letter-spacing:.12em;font-weight:700;margin-bottom:18px}
+#review-close{border:0;background:#eff4ed;color:var(--green-dark);border-radius:50%;width:35px;height:35px;cursor:pointer}
+.review-dialog-content{font-size:16px;line-height:1.85;white-space:normal}
+.review-dialog-content p{margin:0 0 15px}
+.review-dialog-author{font-weight:700;color:var(--green-dark);margin-top:18px}
+@media(max-width:950px){#testimonials .review-slide{flex-basis:calc((100% - 20px)/2)}}
+@media(max-width:650px){#testimonials .review-slide{flex-basis:88%;min-height:300px;max-height:330px;padding:25px 22px}#testimonials .review-carousel{gap:14px}.review-swipe-hint{display:block}}
+@media(prefers-reduced-motion:reduce){#testimonials .review-carousel{scroll-behavior:auto}}
